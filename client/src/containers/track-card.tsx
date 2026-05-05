@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { colors, mq } from "../styles";
 import { humanReadableTimeFromSeconds } from "../utils/helpers";
 import { Link } from "react-router-dom";
-import type { Track } from "../__generated__/graphql";
+import type { Track } from "../__generated__/types";
 import { useMutation } from '@apollo/client';
 import { gql } from '../__generated__';
 

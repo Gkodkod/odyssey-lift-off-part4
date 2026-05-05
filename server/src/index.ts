@@ -88,9 +88,10 @@ async function startServer() {
       tags: ['Tracks'],
     params: { type: 'object', properties: { id: { type: 'string' } } },
     response: { 
-      200: { type: 'object' },
-      500: { type: 'object' }
-    },
+        200: { type: 'object' },
+        404: { type: 'object' },
+        500: { type: 'object' }
+      },
   },
   handler: async (req, reply) => {
 
@@ -117,9 +118,10 @@ async function startServer() {
       tags: ['Modules'],
     params: { type: 'object', properties: { id: { type: 'string' } } },
     response: { 
-      200: { type: 'object' },
-      500: { type: 'object' }
-    },
+        200: { type: 'object' },
+        404: { type: 'object' },
+        500: { type: 'object' }
+      },
   },
   handler: async (req, reply) => {
 
